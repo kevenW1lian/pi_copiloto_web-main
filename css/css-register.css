@@ -1,0 +1,144 @@
+  html, body {
+    overflow: hidden;
+  }
+
+  body {
+    background-color: rgba(26, 38, 203, 1);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 60px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card h1 {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .input-container {
+    margin-bottom: 20px;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 15px 15px 15px 2.5em;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 50px;
+  }
+
+  .input-container select {
+    padding: 15px 15px 15px 2.5em;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 50px;
+    color: rgba(78, 78, 78);
+  }
+
+  #email-icon,
+  #password-icon,
+  #confirm-password-icon,
+  #photo-icon,
+  #role {
+    background-repeat: no-repeat;
+    background-position: 0.5em center;
+    background-size: 1.5em;
+  }
+
+  #email-icon {
+    background-image: url("imagens/icons8-email-50.png");
+  }
+
+  #password-icon {
+    background-image: url("imagens/icons8-password-50.png");
+  }
+
+  #confirm-password-icon {
+    background-image: url("imagens/icons8-password-50.png");
+  }
+
+  #photo-icon {
+    background-image: url("imagens/camera.png");
+  }
+
+  #role {
+    background-image: url("imagens/icons8-mdma-100 2.png");
+  }
+
+  .button-container {
+    text-align: right;
+    margin-top: 6px;
+  }
+
+  .button-container button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(26, 38, 203, 1);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .register-container {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .register-container button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    color: rgba(26, 38, 203, 1);
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(26, 38, 203, 1);
+    color: white;
+    padding: 10px 0;
+  }

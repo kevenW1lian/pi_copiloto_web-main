@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/css-prof-profile.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <div class="header">
+    <img src="imagens/professor.png" alt="Logo" class="logo">
+    <nav class="barra-nav">
+      <ul id="header-botoes">
+        <li class="hb-items"><a href="page-prof-home.html"> <img src="imagens/home.png"> </a></li>
+        <li class="hb-items"><a href="page-prof-profile.html"> <img src="imagens/person.png"> </a></li>
+        <li class="hb-items"><a href="page-prof-create.html"> <img src="imagens/chatbubble-ellipses.png"> </a></li>
+        <li class="hb-items"><a href="page-login.html"> <img src="imagens/log-out.png"> </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content">
+
+    <!-- Disciplinas -->
+    <div class="disc-all">
+      <h1 id="disciplinas-title">Suas disciplinas</h1>
+      <div class="disc-topo">
+        <button onclick="mostrarAlunos('Matemática aplicada')"><h2>Matemática aplicada</h2><p>PROF. NOME COMPOSTO</p></button>
+        <!-- Adicione mais botões de disciplinas aqui -->
+      </div>
+    </div>
+
+    <!-- Lista de Alunos -->
+    <div id="alunos-list" class="alunos-list" style="display:none;">
+      <h2>Lista de Alunos</h2>
+      <ul id="lista-alunos">
+        <!-- Lista de alunos será gerada aqui -->
+      </ul>
+    </div>
+  
+    <!-- Atividades -->
+    <div class="atvds">
+      <h1>Atividades</h1>
+    </div>
+  
+    <!-- Cards -->
+    <div class="card">
+      <div class="card-prof">
+        <aside>
+          <img src="https://img.freepik.com/fotos-gratis/retrato-de-sorrindo-loiro-jovem-executiva-segurando-papel-e-caneta-contra-cinzento-fundo_23-2148028998.jpg" alt="Profile">
+        </aside>
+        <div class="infoii-prof">
+          <main>
+            <section> 
+              <h1>Prof. Ana Maria Pereira</h1>
+            </section>
+          </main>
+          <article>
+            <p>20min</p>
+          </article>
+        </div>
+      </div>
+      <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+    </div>
+  
+    <!-- Você pode adicionar mais cards aqui -->
+
+</div>
+
+<script>
+  // Dados de exemplo dos alunos
+  const alunos = {
+    'Matemática aplicada': [
+      'Aluno 1',
+      'Aluno 2',
+      'Aluno 3',
+      'Aluno 4',
+      'Aluno 5'
+    ],
+    // Adicione mais disciplinas e alunos aqui
+  };
+  
+  let listaVisivel = false;
+  
+  function mostrarAlunos(disciplina) {
+    const listaAlunos = document.getElementById('lista-alunos');
+    const alunosList = document.getElementById('alunos-list');
+    listaAlunos.innerHTML = '';
+  
+    if (alunos[disciplina]) {
+      alunos[disciplina].forEach(aluno => {
+        const li = document.createElement('li');
+        li.textContent = aluno;
+        listaAlunos.appendChild(li);
+      });
+      if (!listaVisivel) {
+        alunosList.style.display = 'block';
+        listaVisivel = true;
+      } else {
+        alunosList.style.display = 'none';
+        listaVisivel = false;
+      }
+    } else {
+      alunosList.style.display = 'none';
+      listaVisivel = false;
+    }
+  }
+</script>
+
+</body>
+</html>

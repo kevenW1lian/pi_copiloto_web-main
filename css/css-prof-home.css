@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: rgba(21, 22, 28);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .barra-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .barra-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .barra-nav li {
+    margin-left: 20px;
+  }
+  
+  .barra-nav li a img {
+    width: 20px; 
+    height: auto; 
+  }    
+  
+  .barra-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(21, 22, 28);
+    min-width: 80px; /* Define um tamanho mínimo para os botões */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .barra-nav li a:hover {
+    background-color: rgba(21, 22, 28);
+  }
+  
+  .topo {
+    padding: 10px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topo h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .topo a {
+    font-size: 15px;
+    font-style: italic;
+    color: rgba(26, 38, 203, 1);
+  }
+  
+  .content {
+    padding: 20px;
+    max-height: calc(100vh - 100px); /* Subtrai a altura do cabeçalho */
+    overflow-y: auto; /* Ativar a rolagem apenas na direção vertical */
+  }
+  
+  .card {
+    background-color: rgb(244, 245, 255, 1);
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-prof {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-prof aside {
+    padding-right: 20px;
+  }
+  
+  .card-prof img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .card-prof h1 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .card-prof p {
+    font-size: 12px;
+    color: rgba(115, 116, 133, 1);
+  }
+  
+  .prof-article {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .barra-nav {
+      justify-content: flex-end; 
+    }
+    .barra-nav ul {
+      flex-direction: column;
+    }
+    .barra-nav li {
+      margin: 10px 0; 
+    }
+  }
+  

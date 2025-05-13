@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/css-home.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="imagens/logo.png" alt="Logo" class="logo">
+  <nav class="barra-nav">
+    <ul id="header-botoes">
+      <li class="hb-items"><a href="page-home.html"> <img src="imagens/home.png"> </a></li>
+      <li class="hb-items"><a href="page-profile.html"> <img src="imagens/person.png"> </a></li>
+      <li class="hb-items"><a href="page-chat.html"> <img src="imagens/chatbubble-ellipses.png"> </a></li>
+      <li class="hb-items"><a href="page-login.html"> <img src="imagens/log-out.png"> </a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="topo">
+  <h1>Tópicos recentes</h1>
+  <a href="#" onclick="openAlert()">Ingressar numa disciplina</a>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <div class="card-prof">
+      <aside>
+        <img src="https://img.freepik.com/fotos-premium/retrato-de-uma-jovem-professora-em-pe-na-frente-de-seus-alunos-criado-com-ia-generativa_762026-42250.jpg" alt="Profile" >
+      </aside>
+      <div class="infoii-prof">
+        <main>
+          <section> 
+            <h1>Prof. Marcela Fernandes</h1>
+          </section>
+        </main>
+        <article>
+          <p>4min</p>
+        </article>
+      </div>
+    </div>
+    <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-prof">
+      <aside>
+        <img src="https://img.freepik.com/fotos-premium/retrato-de-um-professor-em-frente-a-um-fundo-de-sala-de-aula-ia-gerativa_792465-782.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1715990400&semt=ais_user" alt="Profile">
+      </aside>
+      <div class="infoii-prof">
+        <main>
+          <section> 
+            <h1>Prof. Ricardo Silva</h1>
+          </section>
+        </main>
+        <article>
+          <p>13min</p>
+        </article>
+      </div>
+    </div>
+    <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-prof">
+      <aside>
+        <img src="https://img.freepik.com/fotos-gratis/retrato-de-sorrindo-loiro-jovem-executiva-segurando-papel-e-caneta-contra-cinzento-fundo_23-2148028998.jpg" alt="Profile">
+      </aside>
+      <div class="infoii-prof">
+        <main>
+          <section> 
+            <h1>Prof. Ana Maria Pereira</h1>
+          </section>
+        </main>
+        <article>
+          <p>20min</p>
+        </article>
+      </div>
+    </div>
+    <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+  </div>
+
+</div>
+
+<!-- Script JavaScript para abrir o alerta -->
+<script>
+  function openAlert() {
+    var codigo = prompt("Código para ingressar:");
+    if (codigo) {
+      var confirmar = confirm("Tem certeza que deseja ingressar com o código " + codigo + "?");
+      if (confirmar) {
+        alert("Código " + codigo + " confirmado!");
+      } else {
+        alert("Ingresso cancelado.");
+      }
+    } else {
+      alert("Nenhum código inserido.");
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/css-register.css">
+</head>
+<body>
+
+  <div class="container">
+  
+    <img src="imagens/logo.png" alt="Logo" class="logo">
+  
+    <div class="card">
+      <h1>Registrando-se</h1>
+  
+      <div class="input-container">
+          <select id="role" name="role">
+            <option disabled selected>Selecione sua função:</option>
+            <option value="assistant">Tutor (Copiloto) </option>
+            <option value="professor">Professor (Piloto) </option>
+          </select>
+        </div>
+  
+      <div class="input-container">
+        <input type="email" id="email-icon" placeholder="E-mail">
+      </div>
+  
+      <div class="input-container">
+        <input type="password" id="password-icon" placeholder="Senha">
+      </div>
+  
+      <div class="input-container">
+          <input type="password" id="password-icon" placeholder="Confirme a senha">
+      </div>
+  
+      <div class="input-container">
+        <input type="profile-pic" id="photo-icon" placeholder="Link da sua foto de perfil">
+      </div>
+  
+      <div class="button-container">
+        <a id="confirmar" href=""><button class="botaologin">Entrar</button></a>
+      </div>
+  
+      <div class="register-container">
+          <a href="page-login.html" class="divregistrar">Cancelar</a>
+        </div>
+  
+    </div>
+  </div>
+  
+  <div class="footer">Copiloto © 2024</div>
+  
+  <script>
+    document.getElementById('role').addEventListener('change', function() {
+      var selectedOption = this.value;
+      var redirectPage = selectedOption === 'assistant' ? 'page-home.html' : 'page-prof-home.html';
+  
+      document.getElementById('confirmar').setAttribute('href', redirectPage);
+    });
+  </script>
+  
+  
+  </body>
+  </html>

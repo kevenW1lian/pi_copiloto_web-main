@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/css-prof-home.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="imagens/professor.png" alt="Logo" class="logo">
+  <nav class="barra-nav">
+    <ul id="header-botoes">
+      <li class="hb-items"><a href="page-prof-home.html"> <img src="imagens/home.png"> </a></li>
+      <li class="hb-items"><a href="page-prof-profile.html"> <img src="imagens/person.png"> </a></li>
+      <li class="hb-items"><a href="page-prof-create.html"> <img src="imagens/chatbubble-ellipses.png"> </a></li>
+      <li class="hb-items"><a href="page-login.html"> <img src="imagens/log-out.png"> </a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="topo">
+  <h1>Seus recentes tópicos</h1>
+  <a href="#" onclick="openCreateDisciplineAlert()">Criar uma disciplina</a>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <div class="card-prof">
+      <aside>
+        <img src="https://img.freepik.com/fotos-gratis/retrato-de-sorrindo-loiro-jovem-executiva-segurando-papel-e-caneta-contra-cinzento-fundo_23-2148028998.jpg" alt="Profile">
+      </aside>
+      <div class="infoii-prof">
+        <main>
+          <section> 
+            <h1>Prof. Ana Maria Pereira</h1>
+          </section>
+        </main>
+        <article>
+          <p>20min</p>
+        </article>
+      </div>
+    </div>
+    <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-prof">
+      <aside>
+        <img src="https://img.freepik.com/fotos-gratis/retrato-de-sorrindo-loiro-jovem-executiva-segurando-papel-e-caneta-contra-cinzento-fundo_23-2148028998.jpg" alt="Profile">
+      </aside>
+      <div class="infoii-prof">
+        <main>
+          <section> 
+            <h1>Prof. Ana Maria Pereira</h1>
+          </section>
+        </main>
+        <article>
+          <p>20min</p>
+        </article>
+      </div>
+    </div>
+    <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-prof">
+      <aside>
+        <img src="https://img.freepik.com/fotos-gratis/retrato-de-sorrindo-loiro-jovem-executiva-segurando-papel-e-caneta-contra-cinzento-fundo_23-2148028998.jpg" alt="Profile">
+      </aside>
+      <div class="infoii-prof">
+        <main>
+          <section> 
+            <h1>Prof. Ana Maria Pereira</h1>
+          </section>
+        </main>
+        <article>
+          <p>20min</p>
+        </article>
+      </div>
+    </div>
+    <p class="prof-article">Here's a small text description for the card content. Nothing more, nothing less.</p>
+  </div>
+
+</div>
+
+<!-- Script JavaScript para abrir o alerta -->
+<script>
+  function generateRandomCode(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
+
+  function openCreateDisciplineAlert() {
+    const nomeDisciplina = prompt("Nome da disciplina:");
+    if (nomeDisciplina) {
+      const codigoDisciplina = generateRandomCode(5);
+      const confirmar = confirm(`Disciplina: "${nomeDisciplina}"\nCódigo: ${codigoDisciplina}\n\nTem certeza que deseja criar esta disciplina?`);
+      if (confirmar) {
+        alert(`Disciplina "${nomeDisciplina}" com código ${codigoDisciplina} criada com sucesso!`);
+      } else {
+        alert("Criação da disciplina cancelada.");
+      }
+    } else {
+      alert("Nome da disciplina não inserido.");
+    }
+  }
+</script>
+
+</body>
+</html>

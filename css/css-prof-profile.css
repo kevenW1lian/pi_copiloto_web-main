@@ -1,0 +1,208 @@
+html, body {
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos do cabeçalho */
+  .header {
+    background-color: rgba(21, 22, 28, 1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos da barra de navegação */
+  .barra-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .barra-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .barra-nav li {
+    margin-left: 20px;
+  }
+  
+  .barra-nav li a img {
+    width: 20px;
+    height: auto;
+  }
+  
+  .barra-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(21, 22, 28, 0.7);
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .barra-nav li a:hover {
+    background-color: rgba(21, 22, 28, 1);
+  }
+  
+  /* Estilos do conteúdo */
+  .content {
+    padding: 20px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+  
+  /* Estilos do topo do perfil */
+  .perfil-topo {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+  }
+  
+  .perfil-topo aside {
+    padding-right: 20px;
+  }
+  
+  .perfil-topo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .perfil-topo h1 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .perfil-topo p {
+    font-size: 12px;
+    color: rgba(115, 116, 133, 1);
+  }
+  
+  /* Estilos das disciplinas */
+  .disc-all {
+    padding: 10px 20px 0px 20px;
+  }
+  
+  .disc-all .disc-topo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .disc-all h1 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  .disc-all button h2 {
+    font-size: 20px;
+    color: white;
+    margin-right: 6px;
+  }
+  
+  .disc-all p {
+    color: white;
+    font-weight: 100;
+    padding-top: 1px;
+    font-size: 12px;
+  }
+  
+  .disc-all button {
+    padding: 20px;
+    display: block;
+    background-color: rgba(21, 22, 28, 1);
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    border-radius: 30px;
+    border-color: transparent;
+  }
+  
+  .disc-all button:active {
+    background-color: rgba(21, 22, 28, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .disc-all h1 {
+    color: black;
+  }
+  
+  /* Estilos dos cards */
+  .card {
+    background-color: rgb(244, 245, 255, 1);
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-prof {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-prof aside {
+    padding-right: 20px;
+  }
+  
+  .card-prof img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .card-prof h1 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .card-prof p {
+    font-size: 12px;
+    color: rgba(115, 116, 133, 1);
+  }
+  
+  .prof-article {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Estilos da lista de alunos */
+  .alunos-list {
+    background-color: rgb(244, 245, 255, 1);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .alunos-list h2 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .alunos-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alunos-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(115, 116, 133, 0.3);
+  }
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create</title>
+  <link rel="stylesheet" href="css/css-prof-create.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <div class="header">
+    <img src="imagens/professor.png" alt="Logo" class="logo">
+    <nav class="barra-nav">
+      <ul id="header-botoes">
+        <li class="hb-items"><a href="page-prof-home.html"> <img src="imagens/home.png"> </a></li>
+        <li class="hb-items"><a href="page-prof-profile.html"> <img src="imagens/person.png"> </a></li>
+        <li class="hb-items"><a href=""> <img src="imagens/chatbubble-ellipses.png"> </a></li>
+        <li class="hb-items"><a href="page-login.html"> <img src="imagens/log-out.png"> </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content">
+
+    <!-- Disciplinas -->
+    <div class="disc-all">
+      <h1 id="texto-topo">Adicionar uma atividade</h1>
+    </div>
+
+    <!-- Tabela de inputs -->
+    <table class="inputs-table">
+      <tr>
+        <td>
+          <label for="disciplina">Selecione a disciplina:</label>
+        </td>
+        <td>
+          <select id="disciplina" name="disciplina" class="input-select">
+            <option value="matematica_logica">Matemática lógica</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="descricao">Adicionar texto:</label><br>
+          <textarea id="descricao" name="descricao" rows="10" cols="50" class="input-textarea"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="arquivo">Upload de arquivo:</label><br>
+          <input type="file" id="arquivo" name="arquivo" class="input-file">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button id="btnAdicionarAtividade" class="btn-adicionar" onclick="adicionarAtividade()">Adicionar atividade</button>
+        </td>
+      </tr>
+    </table>
+  
+  </div>
+
+  <script>
+    function adicionarAtividade() {
+      // Exibe um alerta pedindo para confirmar
+      if (confirm("Deseja realmente adicionar esta atividade?")) {
+        // Se o usuário confirmar, exibe uma mensagem de sucesso
+        alert("Atividade adicionada!");
+      }
+    }
+  </script>
+
+</body>
+</html>
